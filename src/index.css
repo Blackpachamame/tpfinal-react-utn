@@ -61,7 +61,7 @@ a {
   justify-content: center;
 
   /*background: grey;*/
-  background-image: url(../img/foto_header5.jpg);
+  background-image: url(./assets/img/foto_header5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
