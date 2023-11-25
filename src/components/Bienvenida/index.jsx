@@ -1,7 +1,3 @@
-import logo from "../../assets/img/logo.png";
-
-
-
 export default function Bienvenida() {
   return (
     <div className="contenedorImagen">
