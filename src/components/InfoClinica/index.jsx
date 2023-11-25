@@ -1,4 +1,4 @@
-import logo from "../../assets/img/logo.png";
+
 
 export default function InfoClinica() {
   return (
