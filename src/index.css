@@ -1,9 +1,12 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Inter", sans-serif;
-  margin-left: 0;
-  margin-right: 0;
   font-size: 16px;
-  margin-bottom: 0;
 }
 
 a {
@@ -11,16 +14,41 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+img,
+figure,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
-  z-index: 99;
+  width: 100%;
   background: white;
+  padding: 20px;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
+  z-index: 99;
+}
+
+.containerNav {
   width: 100%;
-  height: 75px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .itemHeader {
@@ -29,22 +57,19 @@ a {
   color: black;
 }
 
-.itemLogin {
+.itemBtn {
   background: #3172d2;
-  height: 25px;
-  width: 100px;
   border-radius: 25px;
   text-align: center;
   color: rgb(255, 255, 255);
-  padding-top: 2px;
+  padding: 8px 20px;
 
   transition-duration: 0.3s;
 }
-.itemLogin a {
+.itemBtn a {
   color: rgb(255, 255, 255);
 }
-
-.itemLogin:hover {
+.itemBtn:hover {
   background-color: #879dbd;
 }
 
@@ -53,57 +78,39 @@ a {
 }
 
 .contenedorImagen {
-  /*margin-top: 80px;*/
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  /*background: grey;*/
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
   background-image: url(./assets/img/foto_header5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  width: 100%;
-  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemImagen1,
+.itemImagen2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  text-align: center;
+  text-wrap: balance;
 }
 
 .itemImagen1 {
-  color: rgb(255, 255, 255);
   font-size: 48px;
-  text-shadow: 2px 2px 0px rgb(0, 0, 0);
   font-weight: bold;
-  text-align: center;
+  margin-bottom: 15px;
 }
 
 .itemImagen2 {
-  color: rgb(255, 255, 255);
   font-size: 28px;
-  text-shadow: 2px 2px 0px rgb(0, 0, 0);
-  text-align: center;
-  font-weight: normal;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
-.itemImagen3 {
-  color: white;
-  font-size: 16px;
-  background: #3172d2;
-  height: 30px;
-  width: 120px;
-  border-radius: 50px;
-  text-align: center;
-  padding-top: 8px;
-  margin-top: 30px;
-
-  transition-duration: 0.3s;
-}
-.itemImagen3 a {
-  color: white;
-}
-.itemImagen3:hover {
-  background-color: #879dbd;
-}
 /*
 .contenedorRegistrate{
     
@@ -128,16 +135,40 @@ a {
 }
 */
 
-.contenedorQuienes {
-  background: rgb(231, 229, 252);
+#quienSomos {
   width: 100%;
-  height: 300px;
+  background: rgb(231, 229, 252);
+  padding: 50px;
+}
+
+.contenedorQuienes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Carrusel*/
+#qsCarrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.carousel img {
+  width: 250px;
+  height: 30%;
+  object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
 }
 
 .itemQuienes2,
@@ -145,7 +176,7 @@ a {
 .itemPreguntas2,
 .itemRegistrate2 {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .itemQuienes1,
 .itemAyuda1,
@@ -168,12 +199,8 @@ a {
 }
 
 .itemQuienes3 {
-  width: 600px;
-  height: 100px;
-  font-size: 16px;
-  color: black;
+  max-width: 600px;
   text-align: center;
-  text-justify: center;
 }
 
 .contenedorAyuda {
@@ -207,7 +234,6 @@ a {
   align-items: center;
   font-size: 14px;
   text-align: center;
-  text-justify: center;
 
   width: 60%;
   padding: 0% 3%;
@@ -489,7 +515,6 @@ a {
   align-self: center;
   height: 55px;
   text-align: center;
-  text-justify: center;
 }
 
 .contenedorItemFooter {
@@ -675,25 +700,7 @@ a {
 .botonVolver:hover {
   background-color: #6a9deb;
 }
-/* carrusel*/
-#qsCarrusel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  padding-bottom: 20px;
-  background: rgb(231, 229, 252);
-}
-
-.carousel {
-  max-width: 60%;
-  margin: 0 auto;
-}
-.carousel img {
-  width: 250px;
-  height: 30%;
-  object-fit: cover;
-}
 /*NUEVO menu**************************************/
 
 .menuPrincipal {

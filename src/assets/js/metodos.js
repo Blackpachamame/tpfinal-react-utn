@@ -1,15 +1,15 @@
 /* eslint-disable no-undef */
-var botonArriba = document.querySelector('.botonVolver');
+// var botonArriba = document.querySelector('.botonVolver');
 
-window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 300) {
-        botonArriba.style.display = 'block';
-    } else {
-        botonArriba.style.display = 'none';
-    }
-});
+// window.addEventListener('scroll', function () {
+//     if (window.pageYOffset > 300) {
+//         botonArriba.style.display = 'block';
+//     } else {
+//         botonArriba.style.display = 'none';
+//     }
+// });
 
-/* FrancoR: agregue algo con JQuery */
+/* Carousel */
 $(document).ready(function () {
     $('.carousel').slick({
         dots: true,
@@ -22,13 +22,13 @@ $(document).ready(function () {
     });
 });
 
-const toggleMENUelement = document.getElementsByIdName('toggleMENU');
+/*const toggleMENUelement = document.getElementsByIdName('toggleMENU');
 const menuPrincipaLelement = document.getElementsByIdName('menuPrincipal');
 
 toggleMENUelement.addEventListener('click', () => {
     menuPrincipaLelement.classList.toggle('menuPrincipal--show');
 })
-/*
+
 function enlaceFacebook() {
     window.open("https://www.facebook.com/");
 }
