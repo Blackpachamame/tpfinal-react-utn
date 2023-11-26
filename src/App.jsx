@@ -3,6 +3,10 @@ import InfoClinica from "./components/InfoClinica";
 import Bienvenida from "./components/Bienvenida";
 import About from "./components/About";
 
+import FaqsYMapa from "./components/FaqsYMapa";
+import Footer from "./components/Footer";
+import BtnVolver from "./components/BtnVolver";
+
 function App() {
   return (
     <>
@@ -10,6 +14,9 @@ function App() {
       <Bienvenida />
       <InfoClinica />
       <About />
+      <FaqsYMapa />
+      <Footer />
+      <BtnVolver />
     </>
   );
 }
