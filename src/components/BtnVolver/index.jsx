@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TiArrowUpThick } from "react-icons/ti";
 
 export default function BtnVolver() {
   const [visible, setVisible] = useState(false);
@@ -30,7 +31,7 @@ export default function BtnVolver() {
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       >
-        <i className="bi bi-arrow-bar-up"></i>
+        <TiArrowUpThick style={{ fontSize: "20px" }} />
       </button>
     </div>
   );

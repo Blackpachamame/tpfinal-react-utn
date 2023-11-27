@@ -1,6 +1,7 @@
-import recuperacion from "../../assets/img/8542025_hospital_building_icon.png";
-import medicina from "../../assets/img/3678442_hospital_medicine_icon.png";
-import hospital from "../../assets/img/5929124_doctor_healthcare_hospital_medical_medicine_icon.png";
+import { FaHospital } from "react-icons/fa";
+import { BsBandaid } from "react-icons/bs";
+import { FaUserDoctor } from "react-icons/fa6";
+
 export default function Informate() {
   return (
     <section id="informate" className="contenedorInformate">
@@ -8,24 +9,24 @@ export default function Informate() {
       <h2>¿Por qué elegirnos?</h2>
       <div className="contenedorItemsInformate">
         <div className="itemsInformate">
-          <img src={recuperacion} alt="" className="iconito" />
+          <FaHospital style={{ fontSize: "60px" }} />
           <p>
             Contamos con la tecnologia para su{" "}
-            <span style={{ color: "#3172d2" }}>recuperación.</span>
+            <span style={{ color: "#7d2a2a" }}>recuperación.</span>
           </p>
         </div>
         <div className="itemsInformate">
-          <img src={medicina} alt="" className="iconito" />
+          <BsBandaid style={{ fontSize: "60px" }} />
           <p>
             Tu salud es lo más{" "}
-            <span style={{ color: "#3172d2" }}>importante</span> para nosotros.
+            <span style={{ color: "#7d2a2a" }}>importante</span> para nosotros.
           </p>
         </div>
         <div className="itemsInformate">
-          <img src={hospital} alt="" className="iconito" />
+          <FaUserDoctor style={{ fontSize: "60px" }} />
           <p>
             El personal mejor{" "}
-            <span style={{ color: "#3172d2" }}>capacitado</span> a su
+            <span style={{ color: "#7d2a2a" }}>capacitado</span> a su
             disposicion.
           </p>
         </div>

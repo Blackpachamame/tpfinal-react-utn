@@ -5,11 +5,12 @@ export default function Bienvenida() {
       <p className="itemImagen2">
         Atención especializada en la salud y bienestar de las personas.
       </p>
-      <div>
+      <div className="btnContainer">
         <a href="#registro" className="itemBtn">
           Registrate
         </a>
       </div>
+      <div className="fondoOscuro"></div>
     </section>
   );
 }

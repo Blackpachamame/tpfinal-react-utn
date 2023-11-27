@@ -17,9 +17,9 @@ export default function About() {
 
       <div id="qsCarrusel">
         <div className="carousel">
-          <img src={imgCarrusel1} />
-          <img src={imgCarrusel2} />
-          <img src={imgCarrusel3} />
+          <img src={imgCarrusel1} alt="imgCarrusel 1" />
+          <img src={imgCarrusel2} alt="imgCarrusel 2" />
+          <img src={imgCarrusel3} alt="imgCarrusel 3" />
         </div>
       </div>
     </section>

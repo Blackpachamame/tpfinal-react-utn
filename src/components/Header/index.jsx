@@ -5,7 +5,7 @@ export default function Header() {
     <header id="cabezera" className="header">
       <div className="containerNav">
         <figure>
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" width={154} height={40} />
         </figure>
         <nav className="navbar">
           <ul>

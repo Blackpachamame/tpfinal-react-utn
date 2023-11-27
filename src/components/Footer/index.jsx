@@ -1,15 +1,19 @@
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <footer className="contFoot">
       <div className="subContFoot">
-        <p>Terminos y Condiciones</p>
-        <p>Contactanos</p>
-        <div className="der">
+        <ul>
+          <li>Terminos y Condiciones</li>
+          <li>Contactanos</li>
+        </ul>
+        <div className="redes">
           <a href="https://www.facebook.com/">
-            <i className="bi bi-facebook"></i>
+            <FaFacebookF style={{ fontSize: "16px", color: "#3d6eb8" }} />
           </a>
           <a href="https://www.linkedin.com/">
-            <i className="bi bi-linkedin"></i>
+            <FaLinkedinIn style={{ fontSize: "16px", color: "#3d6eb8" }} />
           </a>
         </div>
       </div>

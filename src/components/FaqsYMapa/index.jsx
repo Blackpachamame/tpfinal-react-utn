@@ -28,7 +28,12 @@ export default function FaqsYMapa() {
               Atención telefónica de nuestro call center: +54 (341) 1023 4567
             </li>
             <li>
-              A través de nuestro e-mail: turnos@clinicasantoviernes.com.ar
+              <p className="ellipsis">
+                A través de nuestro e-mail:{" "}
+                <span title="turnos@clinicasantoviernes.com.ar">
+                  turnos@clinicasantoviernes.com.ar
+                </span>
+              </p>
             </li>
             <li>
               A través de nuestras redes sociales: clinicaSV (Instagram,
