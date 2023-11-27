@@ -1,8 +1,8 @@
 export default function FaqsYMapa() {
   return (
     <section id="faq" className="contenedorPreguntas">
-      <h4 className="itemPreguntas1">CONOCENOS</h4>
-      <h2 className="itemPreguntas2">Preguntas Frecuentes</h2>
+      <h3>Faqs</h3>
+      <h2>Preguntas Frecuentes</h2>
       <div className="acordeon">
         <details>
           <summary>¿Cuáles son los horarios de atención al público?</summary>
@@ -14,13 +14,10 @@ export default function FaqsYMapa() {
         </details>
 
         <details>
-          <summary>
-            ¿Cuáles son las prestaciones (pre-pagas, obras sociales, etc) con
-            las que trabajan?
-          </summary>
+          <summary>¿Cuáles son las prestaciones con las que trabajan?</summary>
           <p className="contenidoDetails">
             Clínica Santo Viernes tiene relación con todas las prestadoras del
-            país. Además atendemos a particulares.
+            país, además atendemos a particulares.
           </p>
         </details>
 
@@ -28,7 +25,7 @@ export default function FaqsYMapa() {
           <summary>¿Cuáles son los datos de contacto?</summary>
           <ul className="contenidoDetails">
             <li>
-              Atención telefónica de nuestro call center: +54 (341) 1023 4567.
+              Atención telefónica de nuestro call center: +54 (341) 1023 4567
             </li>
             <li>
               A través de nuestro e-mail: turnos@clinicasantoviernes.com.ar

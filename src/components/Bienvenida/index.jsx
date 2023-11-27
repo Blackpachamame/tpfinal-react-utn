@@ -1,13 +1,15 @@
 export default function Bienvenida() {
   return (
-    <div className="contenedorImagen">
+    <section className="contenedorImagen">
       <h1 className="itemImagen1">¡BIENVENIDOS!</h1>
-      <h3 className="itemImagen2">
+      <p className="itemImagen2">
         Atención especializada en la salud y bienestar de las personas.
-      </h3>
-      <div className="itemBtn">
-        <a href="#registro">Registrate</a>
+      </p>
+      <div>
+        <a href="#registro" className="itemBtn">
+          Registrate
+        </a>
       </div>
-    </div>
+    </section>
   );
 }

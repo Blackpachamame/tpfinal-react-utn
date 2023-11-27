@@ -6,9 +6,9 @@ export default function About() {
   return (
     <section id="quienSomos">
       <div className="contenedorQuienes">
-        <h5 className="itemQuienes1">CONOCENOS</h5>
-        <h4 className="itemQuienes2">¿Quienes somos?</h4>
-        <p className="itemQuienes3">
+        <h3>¿Quienes somos?</h3>
+        <h2>Conocenos</h2>
+        <p className="itemQuienes">
           Somos un equipo de más de 1000 personas entre profesionales médicos,
           tecnicos comprometidos en brindar cada día una excelente atención,
           eficiencia y con un trato cálido y cordial.

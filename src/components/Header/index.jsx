@@ -10,27 +10,19 @@ export default function Header() {
         <nav className="navbar">
           <ul>
             <li>
-              <a id="quienes" href="#quienSomos" className="itemH">
-                Quienes somos
-              </a>
+              <a href="#quienSomos">Quienes somos</a>
             </li>
             <li>
-              <a id="registrate" href="#registro" className="itemH">
-                Turnos
-              </a>
+              <a href="#registro">Turnos</a>
             </li>
             <li>
-              <a id="funciona" href="#BA" className="itemH">
-                Infórmate
-              </a>
+              <a href="#informate">Infórmate</a>
             </li>
             <li>
-              <a id="faqs" href="#faq" className="itemH">
-                FAQs
-              </a>
+              <a href="#faq">FAQs</a>
             </li>
             <li>
-              <a className="itemBtn" href="">
+              <a href="" className="itemBtn">
                 Ingresar
               </a>
             </li>

@@ -21,15 +21,13 @@ export default function Turnos() {
   };
 
   return (
-    <div id="registro" className="contenedorRegistrate">
-      <div className="itemRegistrate1">TURNOS</div>
-      <div className="itemRegistrate2">
-        ¿Turnos? Llamá o dejanos tu contacto
-      </div>
+    <section id="registro" className="contenedorRegistrate">
+      <h3>Turnos</h3>
+      <h2>Llamanos o dejanos tu contacto</h2>
       <form onSubmit={manejarEnvio} className="formulario">
         <Campo
           label="Nombre"
-          placeholder="Ingresar nombre"
+          placeholder="Fulano"
           required
           valor={nombre}
           actualizarValor={setNombre}
@@ -37,7 +35,7 @@ export default function Turnos() {
         {/* <p className="campo1">Error! Debes completar este campo!</p> */}
         <Campo
           label="Apellido"
-          placeholder="Apellido*"
+          placeholder="De Tal"
           required
           id="apellido"
           value={apellido}
@@ -47,7 +45,7 @@ export default function Turnos() {
         <Campo
           type="email"
           label="Email"
-          placeholder="Email"
+          placeholder="fulanito@gmail.com"
           required
           id="email"
           value={email}
@@ -57,7 +55,7 @@ export default function Turnos() {
         <Campo
           type="number"
           label="Teléfono"
-          placeholder="Teléfono"
+          placeholder="11 0032 1024"
           required
           id="telefono"
           value={telefono}
@@ -67,7 +65,7 @@ export default function Turnos() {
         <Campo
           type="text"
           label="Asunto"
-          placeholder="Asunto"
+          placeholder="Ingrese Asunto"
           required
           id="asunto"
           value={asunto}
@@ -77,6 +75,6 @@ export default function Turnos() {
 
         <button className="itemBoton">Enviar</button>
       </form>
-    </div>
+    </section>
   );
 }

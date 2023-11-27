@@ -17,7 +17,7 @@ const Campo = ({
     <div className="campo">
       <label htmlFor={label}>{label}</label>
       <input
-        className="itemRegistrate inputs"
+        className="inputs"
         id={label}
         name={label}
         placeholder={placeholder}

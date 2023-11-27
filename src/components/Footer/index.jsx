@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="copyR">
-        <p>2023 Todos los derechos Reservados</p>
+        <p>2023 © Todos los derechos Reservados</p>
       </div>
     </footer>
   );
