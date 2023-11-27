@@ -1,13 +1,4 @@
 /* eslint-disable no-undef */
-// var botonArriba = document.querySelector('.botonVolver');
-
-// window.addEventListener('scroll', function () {
-//     if (window.pageYOffset > 300) {
-//         botonArriba.style.display = 'block';
-//     } else {
-//         botonArriba.style.display = 'none';
-//     }
-// });
 
 /* Carousel */
 $(document).ready(function () {
@@ -29,13 +20,6 @@ toggleMENUelement.addEventListener('click', () => {
     menuPrincipaLelement.classList.toggle('menuPrincipal--show');
 })
 
-function enlaceFacebook() {
-    window.open("https://www.facebook.com/");
-}
-
-function enlaceLinkedin() {
-    window.open("https://www.linkedin.com/");
-}
 
 function enviarDatos() {
     var nombre = document.getElementById("nombre").value;
