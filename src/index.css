@@ -75,6 +75,10 @@ svg {
   align-items: center;
 }
 
+.navbar.active {
+  width: 270px;
+}
+
 .navbar ul {
   display: flex;
   align-items: center;
@@ -88,12 +92,9 @@ svg {
   color: #2662b9;
 }
 
-.itemHeader {
-  /* margin-left: 30px; */
-  margin-right: 25px;
-  color: rgb(0, 0, 0);
+.menu-icon {
+  display: none;
 }
-
 .itemBtn {
   font-weight: 500;
   background: #3172d2;
@@ -108,10 +109,6 @@ svg {
 }
 .itemBtn:hover {
   background-color: #2662b9;
-}
-
-.itemHeaderImg {
-  margin-right: 110px;
 }
 /* CIERRE HEADER */
 
@@ -529,6 +526,37 @@ ul.contenidoDetails .ellipsis {
   }
   .infoCarta {
     text-align: center;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: white;
+    width: 0;
+    height: calc(100vh - 80px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+
+  .navbar ul li {
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
   }
 }
 

@@ -1,13 +1,24 @@
+import { useState } from "react";
 import logo from "../../assets/img/logo.png";
+import { CgMenuRight } from "react-icons/cg";
 
 export default function Header() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
   return (
     <header id="cabezera" className="header">
       <div className="containerNav">
         <figure>
           <img src={logo} alt="logo" width={154} height={40} />
         </figure>
-        <nav className="navbar">
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <CgMenuRight style={{ fontSize: "40px" }} />
+        </div>
+        <nav className={`navbar ${showNavbar && "active"}`}>
           <ul>
             <li>
               <a href="#quienSomos">Quienes somos</a>
@@ -29,39 +40,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-
-      {/* <div className="containerHeaderResponsive">
-        <div className="itemHeaderImg">
-          <img className="imgH" src="img/logo.png" alt="" />
-          <i className="las la-bars"></i>
-        </div>
-
-        <div className="itemsResponsiveContainer">
-          <div className="itemHeaderR" id="quienes">
-            <a href="#quienSomos" className="itemH">
-              Quienes somos
-            </a>
-          </div>
-          <div className="itemHeaderR" id="registrate">
-            <a href="#registro" className="itemH">
-              Turnos
-            </a>
-          </div>
-          <div className="itemHeaderR" id="funciona">
-            <a href="#BA" className="itemH">
-              Infórmate
-            </a>
-          </div>
-          <div className="itemHeaderR" id="faqs">
-            <a href="#faq" className="itemH">
-              FAQs
-            </a>
-          </div>
-          <div className="itemLogin">
-            <a href="">Ingresar</a>
-          </div>
-        </div>
-      </div> */}
     </header>
   );
 }

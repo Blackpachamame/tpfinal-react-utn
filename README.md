@@ -7,7 +7,7 @@ Para este trabajo práctico utilizamos una landing page hecha por un compañero 
 - **Profesor:** Brian Galli
 - **Página:** Clínica Santo Viernes
 
-## [Sitio en vivo](https://clinica-santo-viernes.vercel.app/)
+## [Sitio en vivo](https://clinica-santo-viernes.vercel.app/) 📌
 
 ## Comenzando
 
@@ -41,10 +41,11 @@ Luego abra `http://localhost:5173/` para ver su aplicación.
 Usando `text-overflow: ellipsis;` podemos evitar que un texto se desborde y salga del contenedor.
 
 ## Pendientes
-- Validaciones del formulario
-- Header responsive
+- [ ] Validaciones del formulario
+- [x] ~~Header responsive~~
 
 ## Recursos útiles
 
 - [Vite](https://vitejs.dev/) - Documentación.
+- [React](https://es.react.dev/) - Documentación.
 - [React Icons](https://react-icons.github.io/react-icons/) - Iconos.
