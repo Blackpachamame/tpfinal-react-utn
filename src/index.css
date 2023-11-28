@@ -178,20 +178,56 @@ svg {
 }
 
 /* Carrusel*/
-#qsCarrusel {
+/* #qsCarrusel {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .carousel {
-  max-width: 60%;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 0 36px 32px;
+}
+
+@media (max-width: 500px) {
+  .carousel {
+    width: 100%;
+    padding: 0 0 32px;
+  }
 }
 .carousel img {
-  width: 250px;
-  height: 30%;
   object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slider Top */
+.carousel .slick-slide {
+  padding-inline: 10px;
+}
+
+.carousel .slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.2;
+  color: blue;
+}
+
+.carousel .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: blue;
 }
 
 .slick-prev:before,
